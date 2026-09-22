@@ -1,36 +1,39 @@
-# Yashwanth Kanajam
+# Yashwanth Naidu Kanajam
 
 **Data Analytics · Business Intelligence · Python & SQL**
 
-I build analytical workflows that connect data preparation, validation, and reporting to a clear business question. My current portfolio uses healthcare examples to demonstrate skills that transfer across domains: checking data quality, reconciling metrics, comparing assumptions, and delivering documented analytical tools.
+Data Analyst with 4+ years across healthcare and enterprise analytics. My work spans payer-side claims analysis, cohort definition, data quality and reconciliation, KPI reporting, forecasting, and reporting automation, supporting clinical, operations, finance, and leadership teams.
+
+Alongside that professional experience, I maintain a set of independent case studies that extend it into data quality, public-data analysis, decision support, and analytics software. They are separate from any employer systems or data.
 
 ## Core capabilities
 
-- **SQL and Python:** data integration, transformations, quality checks, and reconciliation.
-- **Business intelligence:** Tableau dashboards, metric definitions, and decision-focused analysis.
-- **Analytics software:** FastAPI, typed contracts, automated testing, and reproducible installation.
+- **Analytics & programming:** SQL, Python, PySpark, Advanced Excel.
+- **BI & reporting:** Power BI, Tableau, KPI and executive reporting.
+- **Data quality & engineering:** validation, reconciliation, ETL/ELT, Airflow, Databricks, Delta Lake, Azure Data Factory.
+- **Analytics methods:** cohort analysis, forecasting, variance analysis, regression, EDA.
 
-## Featured projects
+## Case studies
 
-These repositories are currently private; their links require access.
+Source repositories for these case studies are private. I am happy to walk through any of them on request.
 
-### [Healthcare Claims Quality & Utilization Analytics](https://github.com/yashwanth-kanajam/healthcare-claims-quality)
+### Claims Data Quality & Financial Reconciliation
 
-Built a Python and DuckDB SQL workflow to generate synthetic claims, detect controlled data-quality defects, and reconcile spending and utilization. A Tableau dashboard presents the validated results; automated tests and documented setup support reproducibility.
+A Python and DuckDB SQL workflow generates synthetic claims, detects controlled data-quality defects, and reconciles spending and utilization before reporting. A Tableau dashboard presents the validated results.
 
-The reconciliation demonstrates how an incorrect header-to-line join inflates payment totals and checks corrected totals against one another. All data are synthetic, with no real patient, payer, or employer records.
+The reconciliation shows how an incorrect claim header-to-line join inflates payment totals, and checks the corrected totals independently against one another. All data are synthetic, with no real patient, payer, or employer records.
 
-### [Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)
+### Massachusetts Primary Care Access Planning
 
-Combined Census/ACS and HRSA public data using county FIPS to compare primary-care capacity and population context. Python, SQL, and Tableau support the county analysis, sensitivity checks, and a two-page decision memo.
+Census/ACS and HRSA public data joined on county FIPS to compare primary-care capacity against population context across all 14 Massachusetts counties, with Python, SQL, and Tableau supporting the analysis, sensitivity testing, and a two-page decision memo.
 
-Franklin and Hampden appeared in all eight investigation scenarios. The shortlist identifies where to investigate further; it does not establish unmet need or identify an optimal clinic location.
+Franklin and Hampden remained on the investigation shortlist across all eight tested parameter settings, which produced five distinct shortlist outcomes. This supports further investigation; it does not establish unmet need or an optimal clinic location.
 
-### [Healthcare Analytics API](https://github.com/yashwanth-kanajam/healthcare-analytics-api)
+### Healthcare Analytics API
 
-Built a small Python/FastAPI service so applications can consume the validated quality, spending, and access aggregates without rerunning the analytical pipelines. Typed responses include units, periods, denominators, and dataset provenance, with explicit validation and structured errors.
+A small Python/FastAPI service so applications can consume validated quality, spending, and access aggregates without rerunning the analytical pipelines. Typed responses carry units, periods, denominators, and dataset provenance, with explicit input validation and structured errors.
 
-All 35 automated tests passed, including reconciliation against the source artifacts. Clean-clone installation and documented API examples were verified. This is a portfolio API, not a production clinical system.
+Returned metrics are reconciled against the source artifacts they are served from. This is a portfolio analytics service, not a production clinical system.
 
 ## Contact
 
