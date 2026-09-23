@@ -2,18 +2,18 @@
 
 **Data Analyst with 4+ years across healthcare and enterprise analytics**
 
-Professional work has covered payer-side claims and utilization analysis, cohort definition, data quality and reconciliation, forecasting, KPI reporting, and reporting automation, supporting clinical, operations, finance and leadership teams. Day-to-day work spans SQL, Python and PySpark across Snowflake, Databricks, Delta Lake and Azure-based environments, with Power BI and Tableau for recurring reporting and decision support.
+Professional work spans SQL and Python analytics, data quality and reconciliation, KPI reporting, forecasting, and reporting automation, alongside payer-side claims and utilization analysis, supporting clinical, operations, finance and leadership teams across healthcare and enterprise environments. Day-to-day work uses SQL, Python and PySpark across Snowflake, Databricks, Delta Lake and Azure-based environments, with Power BI and Tableau for recurring reporting and decision support.
 
 ## Experience
 
 **Humana — Data Analyst** | Aug 2025 – Aug 2026
-Claims and utilization analytics, cohort definition, data-quality controls, and BI reporting across large healthcare datasets.
+Claims and utilization analytics, cohort definition, data-quality controls, and BI reporting across large healthcare datasets. Reusable SQL and PySpark checks cut recurring manual QA by an estimated 25+ hours per month.
 
 **Accenture — Data Analyst** | Jan 2023 – Jan 2024
-SQL and Python reporting automation, ETL optimization, reconciliation controls, KPI analysis and process improvement.
+SQL and Python reporting automation, ETL optimization, reconciliation controls, KPI analysis and process improvement. Optimizing SQL and Airflow workflows reduced data-retrieval time by 25%.
 
 **Hexaware Technologies — Data Analyst** | Mar 2021 – Dec 2022
-Business-performance analysis, forecasting, variance analysis, Power BI and Tableau reporting, and multi-source reconciliation.
+Business-performance analysis, forecasting, variance analysis, and multi-source reconciliation. Power BI and Tableau KPI dashboards reduced manual reporting effort by approximately 30%.
 
 **Freshworks — Data Analyst Intern** | Aug 2020 – Jan 2021
 SQL and Excel data preparation, KPI reporting, dashboard validation and recurring reporting workflows.
@@ -33,7 +33,7 @@ SQL and Excel data preparation, KPI reporting, dashboard validation and recurrin
 
 ## Selected analytical work
 
-Independent analyses using public or synthetic data, separate from any employer systems or data.
+These case studies use public or synthetic data so the work can be shared openly. Employer systems, data and internal deliverables are not reproduced here.
 
 ### [Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)
 
@@ -41,7 +41,7 @@ County-level analysis combining Census/ACS and HRSA public data to identify wher
 
 Includes the sensitivity analysis, a two-page decision memo, and the Tableau workbook.
 
-### [Claims Data Quality & Financial Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)
+### [Healthcare Claims Quality & Financial Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)
 
 Claims data spans multiple grains, and a reporting pipeline can produce plausible-looking financial totals when header amounts are duplicated through line-level joins. This analysis builds the validation and reconciliation controls that catch that before figures reach reporting — SQL and Python checks for duplicate records, broken references, invalid date sequences and financial reconciliation, with a Tableau dashboard over the validated results.
 
@@ -49,7 +49,7 @@ All claims are synthetic, with no real patient, payer or employer records.
 
 ### [Healthcare Analytics API](https://github.com/yashwanth-kanajam/healthcare-analytics-api)
 
-A small read-only FastAPI interface that makes the validated outputs of the two analyses above consumable by another application, without rerunning either pipeline. Typed contracts, explicit input validation, predictable error behaviour, and tests that reconcile every returned metric against the artifact it came from.
+A small read-only FastAPI interface that makes the validated outputs of the two analyses above consumable by another application, without rerunning either pipeline. Typed contracts, explicit input validation, predictable error behavior, and tests that reconcile every returned metric against the artifact it came from.
 
 ## Contact
 
