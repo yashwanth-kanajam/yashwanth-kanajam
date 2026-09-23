@@ -41,15 +41,17 @@ County-level analysis combining Census/ACS and HRSA public data to identify wher
 
 Includes the sensitivity analysis, a two-page decision memo, and the Tableau workbook.
 
-### Claims Data Quality & Financial Reconciliation
+### [Claims Data Quality & Financial Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)
 
-Claims data spans multiple grains, and a reporting pipeline can produce plausible-looking financial totals when header amounts are duplicated through line-level joins. This analysis builds the validation and reconciliation controls that catch that before figures reach reporting, using synthetic claims with no real patient, payer or employer records.
+Claims data spans multiple grains, and a reporting pipeline can produce plausible-looking financial totals when header amounts are duplicated through line-level joins. This analysis builds the validation and reconciliation controls that catch that before figures reach reporting — SQL and Python checks for duplicate records, broken references, invalid date sequences and financial reconciliation, with a Tableau dashboard over the validated results.
+
+All claims are synthetic, with no real patient, payer or employer records.
 
 ### Healthcare Analytics API
 
 A small FastAPI service that serves validated analytical aggregates through typed contracts, explicit input validation and structured errors, so applications can consume the results without rerunning the analysis. Returned metrics reconcile against the artifacts they are served from.
 
-The repositories for the last two are private for now. I am happy to walk through either on request.
+The Healthcare Analytics API repository is private for now. I am happy to walk through it on request.
 
 ## Contact
 
