@@ -1,40 +1,56 @@
 # Yashwanth Naidu Kanajam
 
-**Data Analytics · Business Intelligence · Python & SQL**
+**Data Analyst with 4+ years across healthcare and enterprise analytics**
 
-Data Analyst with 4+ years across healthcare and enterprise analytics. My work spans payer-side claims analysis, cohort definition, data quality and reconciliation, KPI reporting, forecasting, and reporting automation, supporting clinical, operations, finance, and leadership teams.
+Professional work has covered payer-side claims and utilization analysis, cohort definition, data quality and reconciliation, forecasting, KPI reporting, and reporting automation, supporting clinical, operations, finance and leadership teams. Day-to-day work spans SQL, Python and PySpark across Snowflake, Databricks, Delta Lake and Azure-based environments, with Power BI and Tableau for recurring reporting and decision support.
 
-Alongside that professional experience, I maintain a set of independent case studies that extend it into data quality, public-data analysis, decision support, and analytics software. They are separate from any employer systems or data.
+## Experience
+
+**Humana — Data Analyst** | Aug 2025 – Aug 2026
+Claims and utilization analytics, cohort definition, data-quality controls, and BI reporting across large healthcare datasets.
+
+**Accenture — Data Analyst** | Jan 2023 – Jan 2024
+SQL and Python reporting automation, ETL optimization, reconciliation controls, KPI analysis and process improvement.
+
+**Hexaware Technologies — Data Analyst** | Mar 2021 – Dec 2022
+Business-performance analysis, forecasting, variance analysis, Power BI and Tableau reporting, and multi-source reconciliation.
+
+**Freshworks — Data Analyst Intern** | Aug 2020 – Jan 2021
+SQL and Excel data preparation, KPI reporting, dashboard validation and recurring reporting workflows.
+
+## Education
+
+**M.S. Information Technology** — University of Massachusetts Boston — Dec 2025
 
 ## Core capabilities
 
-- **Analytics & programming:** SQL, Python, PySpark, Advanced Excel.
-- **BI & reporting:** Power BI, Tableau, KPI and executive reporting.
-- **Data quality & engineering:** validation, reconciliation, ETL/ELT, Airflow, Databricks, Delta Lake, Azure Data Factory.
-- **Analytics methods:** cohort analysis, forecasting, variance analysis, regression, EDA.
+| | |
+|---|---|
+| **Analytics & Programming** | SQL · Python · PySpark · Advanced Excel |
+| **BI & Reporting** | Power BI · Tableau · KPI Reporting · Executive Reporting |
+| **Data Quality & Engineering** | Validation · Reconciliation · ETL/ELT · Airflow · Databricks · Delta Lake · Azure Data Factory |
+| **Analytics Methods** | Cohort Analysis · Forecasting · Variance Analysis · Regression · EDA |
 
-## Case studies
+## Selected analytical work
 
-Source repositories for these case studies are private. I am happy to walk through any of them on request.
+Independent analyses using public or synthetic data, separate from any employer systems or data.
+
+### [Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)
+
+County-level analysis combining Census/ACS and HRSA public data to identify where primary-care access warrants deeper investigation. Franklin and Hampden remained on the shortlist across eight parameter settings, which produced five distinct shortlist outcomes — a prompt to investigate further, not a claim of unmet need or an optimal clinic location.
+
+Includes the sensitivity analysis, a two-page decision memo, and the Tableau workbook.
 
 ### Claims Data Quality & Financial Reconciliation
 
-A Python and DuckDB SQL workflow generates synthetic claims, detects controlled data-quality defects, and reconciles spending and utilization before reporting. A Tableau dashboard presents the validated results.
-
-The reconciliation shows how an incorrect claim header-to-line join inflates payment totals, and checks the corrected totals independently against one another. All data are synthetic, with no real patient, payer, or employer records.
-
-### Massachusetts Primary Care Access Planning
-
-Census/ACS and HRSA public data joined on county FIPS to compare primary-care capacity against population context across all 14 Massachusetts counties, with Python, SQL, and Tableau supporting the analysis, sensitivity testing, and a two-page decision memo.
-
-Franklin and Hampden remained on the investigation shortlist across all eight tested parameter settings, which produced five distinct shortlist outcomes. This supports further investigation; it does not establish unmet need or an optimal clinic location.
+Claims data spans multiple grains, and a reporting pipeline can produce plausible-looking financial totals when header amounts are duplicated through line-level joins. This analysis builds the validation and reconciliation controls that catch that before figures reach reporting, using synthetic claims with no real patient, payer or employer records.
 
 ### Healthcare Analytics API
 
-A small Python/FastAPI service so applications can consume validated quality, spending, and access aggregates without rerunning the analytical pipelines. Typed responses carry units, periods, denominators, and dataset provenance, with explicit input validation and structured errors.
+A small FastAPI service that serves validated analytical aggregates through typed contracts, explicit input validation and structured errors, so applications can consume the results without rerunning the analysis. Returned metrics reconcile against the artifacts they are served from.
 
-Returned metrics are reconciled against the source artifacts they are served from. This is a portfolio analytics service, not a production clinical system.
+The repositories for the last two are private for now. I am happy to walk through either on request.
 
 ## Contact
 
-[GitHub: yashwanth-kanajam](https://github.com/yashwanth-kanajam)
+[yashwanthnaidu069@gmail.com](mailto:yashwanthnaidu069@gmail.com)
