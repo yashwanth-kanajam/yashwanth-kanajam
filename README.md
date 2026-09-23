@@ -47,11 +47,9 @@ Claims data spans multiple grains, and a reporting pipeline can produce plausibl
 
 All claims are synthetic, with no real patient, payer or employer records.
 
-### Healthcare Analytics API
+### [Healthcare Analytics API](https://github.com/yashwanth-kanajam/healthcare-analytics-api)
 
-A small FastAPI service that serves validated analytical aggregates through typed contracts, explicit input validation and structured errors, so applications can consume the results without rerunning the analysis. Returned metrics reconcile against the artifacts they are served from.
-
-The Healthcare Analytics API repository is private for now. I am happy to walk through it on request.
+A small read-only FastAPI interface that makes the validated outputs of the two analyses above consumable by another application, without rerunning either pipeline. Typed contracts, explicit input validation, predictable error behaviour, and tests that reconcile every returned metric against the artifact it came from.
 
 ## Contact
 
