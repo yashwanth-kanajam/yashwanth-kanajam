@@ -53,4 +53,6 @@ A small read-only FastAPI interface that makes the validated outputs of the two 
 
 ## Contact
 
+Portfolio — [yashwanth-kanajam.github.io](https://yashwanth-kanajam.github.io/)
+
 [yashwanthnaidu069@gmail.com](mailto:yashwanthnaidu069@gmail.com)
