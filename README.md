@@ -28,18 +28,18 @@ SQL and Excel data preparation, KPI reporting, dashboard validation and recurrin
 |---|---|
 | **Analytics & Programming** | SQL · Python · PySpark · Advanced Excel |
 | **BI & Reporting** | Power BI · Tableau · KPI Reporting · Executive Reporting |
-| **Data Quality & Engineering** | Validation · Reconciliation · ETL/ELT · Airflow · Databricks · Delta Lake · Azure Data Factory |
+| **Data Quality & Engineering** | Validation · Reconciliation · ETL/ELT · Snowflake · Databricks · Delta Lake · Airflow · Azure Data Factory |
 | **Analytics Methods** | Cohort Analysis · Forecasting · Variance Analysis · Regression · EDA |
 
 ## Selected analytical work
 
 These case studies use public or synthetic data so the work can be shared openly. Employer systems, data and internal deliverables are not reproduced here.
 
-### [Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)
+### [Demand Forecast Performance & Operational Exceptions](https://github.com/yashwanth-kanajam/demand-forecast-performance)
 
-County-level analysis combining Census/ACS and HRSA public data to identify where primary-care access warrants deeper investigation. Franklin and Hampden remained on the shortlist across eight parameter settings, which produced five distinct shortlist outcomes — a prompt to investigate further, not a claim of unmet need or an optimal clinic location.
+Evaluation of three years of published day-ahead electricity-demand forecasts across eight U.S. balancing authorities, using hourly EIA-930 data. Measures WAPE, MAE and directional bias against a seasonal-naive benchmark, tests a strictly causal historical bias correction, and separates correctable error from unresolved source-data effects. Results are delivered through a Power BI report reconciled to the Python pipeline.
 
-Includes the sensitivity analysis, a two-page decision memo, and the Tableau workbook.
+Python · pandas · Power BI (DAX, Power Query) · pytest · [Power BI report (PDF)](https://github.com/yashwanth-kanajam/demand-forecast-performance/blob/main/reports/demand_forecast_performance.pdf)
 
 ### [Healthcare Claims Quality & Financial Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)
 
@@ -47,9 +47,15 @@ Claims data spans multiple grains, and a reporting pipeline can produce plausibl
 
 All claims are synthetic, with no real patient, payer or employer records.
 
+### [Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)
+
+County-level analysis combining Census/ACS and HRSA public data to identify where primary-care access warrants deeper investigation. Franklin and Hampden remained on the shortlist across eight parameter settings, which produced five distinct shortlist outcomes — a prompt to investigate further, not a claim of unmet need or an optimal clinic location.
+
+Includes the sensitivity analysis, a two-page decision memo, and the Tableau workbook.
+
 ### [Healthcare Analytics API](https://github.com/yashwanth-kanajam/healthcare-analytics-api)
 
-A small read-only FastAPI interface that makes the validated outputs of the two analyses above consumable by another application, without rerunning either pipeline. Typed contracts, explicit input validation, predictable error behavior, and tests that reconcile every returned metric against the artifact it came from.
+A small read-only FastAPI interface that makes the validated outputs of the claims and primary-care access analyses consumable by another application, without rerunning either pipeline. Typed contracts, explicit input validation, predictable error behavior, and tests that reconcile every returned metric against the artifact it came from.
 
 ## Contact
 
