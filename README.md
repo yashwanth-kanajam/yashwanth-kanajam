@@ -37,25 +37,25 @@ These case studies use public or synthetic data so the work can be shared openly
 
 ### [Demand Forecast Performance & Operational Exceptions](https://github.com/yashwanth-kanajam/demand-forecast-performance)
 
-Evaluation of three years of published day-ahead electricity-demand forecasts across eight U.S. balancing authorities, using hourly EIA-930 data. Measures WAPE, MAE and directional bias against a seasonal-naive benchmark, tests a strictly causal historical bias correction, and separates correctable error from unresolved source-data effects. Results are delivered through a Power BI report reconciled to the Python pipeline.
+Three years of published day-ahead electricity-demand forecasts for eight U.S. balancing authorities (hourly EIA-930 data), compared with a seasonal-naive benchmark and a simple historical bias correction. The correction helped where bias was stable and added little elsewhere. Results are presented in a two-page Power BI report.
 
 Python · pandas · Power BI (DAX, Power Query) · [Case study](https://yashwanth-kanajam.github.io/forecast/) · [Power BI report (PDF)](https://github.com/yashwanth-kanajam/demand-forecast-performance/blob/main/reports/demand_forecast_performance.pdf)
 
 ### [Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)
 
-County-level analysis combining Census/ACS and HRSA public data to identify where primary-care access warrants deeper investigation. Franklin and Hampden remained on the shortlist across eight parameter settings, which produced five distinct shortlist outcomes. That is a reason to investigate further, not a claim of unmet need or an optimal clinic location.
+County-level analysis combining Census/ACS and HRSA public data to identify where primary-care access warrants deeper investigation. Franklin and Hampden stayed on the shortlist under all eight parameter settings tested, which makes them the first places to look more closely.
 
 Sensitivity analysis · two-page decision memo · Tableau · [Case study](https://yashwanth-kanajam.github.io/access/)
 
 ### [Healthcare Claims Quality & Financial Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)
 
-Claims data spans multiple grains, and a reporting pipeline can produce plausible-looking financial totals when header amounts are duplicated through line-level joins. This analysis builds the SQL and Python controls that catch that before figures reach reporting: checks for duplicate records, broken references, invalid date sequences and financial reconciliation, with a Tableau dashboard over the validated results. All claims are synthetic, with no real patient, payer or employer records.
+Joining claim headers to service lines repeats header payments and can inflate financial totals without raising any error. This project builds SQL and Python checks that catch that, along with duplicate records, broken references and invalid dates, and presents the reconciled results in a Tableau dashboard. All claims are synthetic.
 
 [Case study](https://yashwanth-kanajam.github.io/claims/) · [Claims explorer](https://yashwanth-kanajam.github.io/explore/)
 
 ### [Healthcare Analytics API](https://github.com/yashwanth-kanajam/healthcare-analytics-api)
 
-A read-only FastAPI interface that serves the validated outputs of the claims and primary-care access analyses to other applications without rerunning either pipeline. Typed contracts, explicit input validation, predictable error behavior, and tests that reconcile every returned metric against the artifact it came from.
+A read-only FastAPI service that makes selected results from the claims and primary-care access analyses available to other applications, with typed responses and input validation.
 
 [Case study](https://yashwanth-kanajam.github.io/api/)
 
