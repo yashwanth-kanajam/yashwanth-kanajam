@@ -34,7 +34,7 @@ Independent projects on public and synthetic data.
 - **[Massachusetts Primary Care Access Planning](https://github.com/yashwanth-kanajam/ma-primary-care-access)**: county screen of physician supply, poverty and age; Franklin and Hampden stayed on the shortlist under all eight settings tested. [Case study](https://yashwanth-kanajam.github.io/access/)
 - **[Claims Quality & Reconciliation](https://github.com/yashwanth-kanajam/healthcare-claims-quality)**: SQL and Python checks on synthetic claims; a header-to-line join overstated the paid total by 132.7%. [Case study](https://yashwanth-kanajam.github.io/claims/)
 - **[Healthcare Analytics API](https://github.com/yashwanth-kanajam/healthcare-analytics-api)**: read-only FastAPI service that serves the claims and access results with units, denominators and documented errors. [Case study](https://yashwanth-kanajam.github.io/api/)
-- **[Claims Quality Agent](https://github.com/yashwanth-kanajam/claims-quality-agent)**: claims checks behind an MCP server, tested against a scripted stand-in model; the agent did not beat a no-model script. [Case study](https://yashwanth-kanajam.github.io/agent/)
+- **[Claims Quality Agent](https://github.com/yashwanth-kanajam/claims-quality-agent)**: claims checks behind an MCP server, tested head to head against a no-model script on 15 cases; the agent did not beat it. [Case study](https://yashwanth-kanajam.github.io/agent/)
 
 ## Contact
 
